@@ -1,0 +1,30 @@
+{
+    "$schema":  "https://example.local/config.json",
+    "default_agent": "orchestrator",
+    "plugins": ["./plugins/example"],
+    "agents": {
+        "build": {
+            // builtin primary — a } in this comment must not truncate the block
+            "keep": "yes",
+            "options": { "nested": true },
+            "model": "provider/model-build#high",
+        },
+        "explore": {
+            "model": "provider/model-explore#xhigh"
+        }
+    },
+    "mcp":  {
+        "servers": {
+                "example":  {
+                                  "command":  [
+                                                  "echo",
+                                                  "mcp"
+                                              ],
+                                  "build": {
+                                      "model": "provider/do-not-touch#max"
+                                  }
+                }
+        }
+    },
+    "extra": { "nested": { "model": "leave-me" } }
+}
