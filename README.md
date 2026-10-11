@@ -2,6 +2,12 @@
 
 OpenCode V2 CLI plugin for creating, editing and activating model/reasoning profiles for `orchestrator`, `builder`, `judge`, `build` and `explore`. `/subagents` displays agent purposes and configured models; `/sdd` opens profiles and the Engram memory browser.
 
+## Screenshots
+
+![SDD profile selection](docs/images/sdd-profile-1.png)
+
+![SDD profile model configuration](docs/images/sdd-profile-2.png)
+
 ## Install
 
 Requires OpenCode V2 (plugin API 2.0.26) and Node.js 22+ for setup/tests. This package is not published to npm.
