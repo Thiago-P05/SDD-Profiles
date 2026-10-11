@@ -1,5 +1,14 @@
 {
-  "name": "full-chatgipiti-v2",
+  "name": "opencode-sdd-profiles",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": "github:Thiago-P05/SDD-Profiles",
+  "engines": { "node": ">=22" },
+  "scripts": { "test": "node --test" },
+  "dependencies": { "@opencode/plugin": "2.0.26" },
+  "peerDependencies": { "@opentui/core": ">=0.5.8", "@opentui/solid": ">=0.5.8", "solid-js": ">=1.9.0" },
+  "peerDependenciesMeta": { "@opentui/core": { "optional": true }, "@opentui/solid": { "optional": true }, "solid-js": { "optional": true } },
   "type": "module",
   "exports": {
     "./tui": "./tui.js"
